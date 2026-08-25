@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <!-- Pengaturan dasar dokumen HTML -->
+    <meta charset="UTF-8" />
+    <!-- Membuat website responsif (bagus di HP maupun Laptop) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Judul yang muncul di tab browser -->
+    <title>Landing Page Belajar Coding</title>
+
+    <!-- MEMASUKKAN BOOTSTRAP CSS (Dari Internet/CDN) -->
+    <!-- Bootstrap membantu membuat tampilan rapi dan modern secara instan -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS TAMBAHAN (Internal CSS) -->
+    <!-- Kita menaruh CSS khusus di sini agar tetap dalam 1 file -->
+    <style>
+      /* Mengubah font bawaan menjadi font sans-serif agar terlihat lebih bersih */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9fbfd; /* Warna latar belakang abu-abu sangat muda */
+      }
+
+      /* Desain khusus untuk bagian Hero (Bagian Utama/Atas) */
+      .hero-section {
+        background-color: #ffffff;
+        padding: 120px 0; /* Memberi jarak kosong atas dan bawah */
+        border-bottom: 1px solid #e9ecef; /* Garis tipis di bagian bawah */
+      }
+
+      /* Efek melayang (hover) pada kotak fitur saat disentuh mouse */
+      .fitur-box:hover {
+        transform: translateY(-5px); /* Mengangkat kotak sedikit ke atas */
+        transition: 0.3s ease-in-out; /* Animasi perpindahan yang halus */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ============================================== -->
+    <!-- BAGIAN 1: NAVBAR (Menu Navigasi di bagian atas)-->
+    <!-- ============================================== -->
+    <!-- navbar-dark & bg-primary: Membuat navbar berwarna biru terang (warna utama Bootstrap) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3 shadow-sm">
+      <div class="container">
+        <!-- Nama/Logo Website -->
+        <a class="navbar-brand fw-bold fs-4" href="#">🚀 BelajarKoding</a>
+
+        <!-- Daftar Menu -->
+        <!-- Catatan: Karena kita tidak pakai JavaScript, tombol hamburger menu (untuk versi HP) tidak akan bisa diklik. 
+                 Maka dari itu, menu akan selalu tampil secara otomatis (dibuat sederhana untuk belajar) -->
+        <ul class="navbar-nav ms-auto d-flex flex-row gap-3">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#beranda">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#fitur">Keunggulan</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.25/dist/sweetalert2.all.min.js"></script>
+     <script>
+          Swal.fire({
+               title: 'Selamat Datang di Portofolio Digital saya',
+               text: 'Halo! Saya Habib Muzakki, seorang Alumni MAN 2 KOTA SERANG. Jurusan AGAMA. Selamat menjelajahi portofolio saya!',
+               icon: 'info',
+               iconColor: 'aqua',
+               confirmButtonText: 'Lanjutkan',
+               background: 'green',
+               color: 'white',
+          })
+     </script>
+
+
+    <!-- ============================================== -->
+    <!-- BAGIAN 2: HERO SECTION (Bagian Utama/Sambutan) -->
+    <!-- ============================================== -->
+    <!-- text-center: Membuat teks rata tengah -->
+    <header id="beranda" class="hero-section text-center">
+      <div class="container">
+        <h1 class="display-3 fw-bold text-dark mb-4">
+          Mulai Belajar Coding <br />
+          <span class="text-primary">Hari Ini Juga!</span>
+        </h1>
+        <p class="lead text-secondary mb-5 w-75 mx-auto">
+          Ini adalah contoh Landing Page yang sangat sederhana. Sengaja dibuat
+          hanya dengan HTML, CSS, dan Bootstrap agar pemula sangat mudah untuk
+          membacanya, memahaminya, dan menirunya.
+        </p>
+        <!-- Tombol panggilan aksi (Call to Action) -->
+        <a
+          href="#fitur"
+          class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold shadow"
+        >
+          Lihat Cara Kerjanya 👇
+        </a>
+      </div>
+    </header>
+
+    <!-- ============================================== -->
+    <!-- BAGIAN 3: FITUR (Penjelasan Mengapa Website Ini Mudah) -->
+    <!-- ============================================== -->
+    <!-- my-5: Memberikan jarak (margin) sumbu Y (atas-bawah) sebesar ukuran ke-5 Bootstrap -->
+    <section id="fitur" class="container my-5 py-5">
+      <!-- Judul Bagian Fitur -->
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Kenapa Kode Ini Sangat Mudah?</h2>
+        <p class="text-muted">
+          Desain khusus untuk kamu yang baru pertama kali belajar.
+        </p>
+      </div>
+
+      <!-- Membuat baris (row) dengan 3 kolom (col) -->
+      <div class="row g-4 text-center">
+        <!-- Kolom 1 -->
+        <div class="col-md-4">
+          <!-- p-4: Padding (jarak ke dalam); bg-white: Latar putih; rounded: Sudut melengkung -->
+          <div class="p-4 bg-white border rounded shadow-sm fitur-box h-100">
+            <div class="display-4 mb-3">📄</div>
+            <h3 class="h5 fw-bold">Hanya 1 File HTML</h3>
+            <p class="text-muted">
+              Semua kode (HTML dan CSS) digabung dalam file
+              <code>Index.html</code> ini saja. Tidak perlu repot buka banyak
+              file sekaligus.
+            </p>
+          </div>
+        </div>
+
+        <!-- Kolom 2 -->
+        <div class="col-md-4">
+          <!-- Kolom ini berisi penjelasan tentang tidak adanya JS -->
+          <div class="p-4 bg-white border rounded shadow-sm fitur-box h-100">
+            <div class="display-4 mb-3">🚫</div>
+            <h3 class="h5 fw-bold">Tanpa JavaScript (JS)</h3>
+            <p class="text-muted">
+              Sesuai permintaan, tidak ada kode JavaScript yang membingungkan.
+              100% murni Struktur (HTML) dan Tampilan (CSS).
+            </p>
+          </div>
+        </div>
+
+        <!-- Kolom 3 -->
+        <div class="col-md-4">
+          <div class="p-4 bg-white border rounded shadow-sm fitur-box h-100">
+            <div class="display-4 mb-3">🎨</div>
+            <h3 class="h5 fw-bold">Bootstrap 5</h3>
+            <p class="text-muted">
+              Menggunakan framework Bootstrap. Kita hanya perlu memanggil
+              "Class" yang sudah disediakan untuk membuat desain modern.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- BAGIAN 4: FOOTER (Bagian Bawah Website)        -->
+    <!-- ============================================== -->
+    <!-- bg-dark: Warna latar gelap; text-white: Teks putih -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+      <div class="container">
+        <h4 class="fw-bold">Selamat Belajar! 🎉</h4>
+        <p class="mb-0 text-white-50">
+          Silakan copy-paste kode ini, ubah teksnya, ganti warnanya, dan jadikan
+          karyamu sendiri.
+        </p>
+        <hr class="border-secondary" />
+        <small class="text-white-50"
+          >&copy; 2026 BelajarKoding. Dibuat khusus untuk bahan belajar.</small
+        >
+      </div>
+    </footer>
+  </body>
+</html>

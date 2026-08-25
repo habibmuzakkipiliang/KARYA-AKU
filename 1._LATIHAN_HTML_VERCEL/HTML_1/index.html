@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bikin Profil Professional dengan Bootstrap</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="body">
+    <header class="header p-5 mb-5">
+      <h1 class="text-center fw-bold">
+        Bikin Profil Professional dengan Bootstrap
+      </h1>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" aria-current="page"
+                >Home <span class="visually-hidden">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profil saya</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kontak</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hubungi</a>
+            </li>
+          </ul>
+          <form class="d-flex my-2 my-lg-0">
+            <input
+              class="form-control me-sm-2"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <hr />
+    <br />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" style="background-color: white">
+          <h2>Profil Saya</h2>
+          <br />
+
+          <div class="card text-center shadow">
+            <!-- Profile Header -->
+            <div class="card-header bg-primary text-white position-relative">
+              <div class="position-relative d-inline-block mt-3">
+                <img
+                  src="https://raw.githubusercontent.com/habibmuzakkipiliang/HM_Initial_Profile_Github/refs/heads/main/HM_Profile_Github.png"
+                  class="rounded-circle border border-3 border-white"
+                  alt="Profile photo of John Doe"
+                  width="80"
+                  height="80"
+                  style="object-fit: cover"
+                />
+                <span
+                  class="position-absolute bottom-0 end-0 bg-success border border-white rounded-circle"
+                  style="width: 20px; height: 20px"
+                ></span>
+              </div>
+            </div>
+
+            <!-- Profile Body -->
+            <div class="card-body">
+              <!-- Name and Title -->
+              <h5 class="card-title mb-1">Habib Muzakki</h5>
+              <p class="text-muted mb-3">Aspiring Full Stack Dev</p>
+
+              <!-- Bio -->
+              <p class="card-text">
+                Aspiring Full Stack Dev | Wibu Anime | Wota JKT48 | Tech
+                Enthusiast | Anak Minang |
+              </p>
+              <hr />
+              <br />
+
+              <div class="card-body">
+                <table
+                  class="table table-bordered border-3 table-responsive border-black"
+                >
+                  <tr>
+                    <td scope="col">Nama</td>
+                    <td scope="col">Habib Muzakki</td>
+                  </tr>
+                  <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>Pria</td>
+                  </tr>
+                  <tr>
+                    <td>Umur</td>
+                    <td>19 Tahun</td>
+                  </tr>
+                  <tr>
+                    <td>Github</td>
+                    <td>
+                      <a href="https://github.com/habibmuzakkipiliang"
+                        >habibmuzakkipiliang</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Coding</td>
+                    <td>HTML, CSS, Bootstrap, JavaScript dan Python</td>
+                  </tr>
+                  <tr>
+                    <td>Linkedin</td>
+                    <td>
+                      <a
+                        href="https://www.linkedin.com/in/habib-muzakki-piliang-15978b315/"
+                        >habib-muzakki-piliang-15978b315</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IG</td>
+                    <td>@habib_muzakki_piliang</td>
+                  </tr>
+                  <tr>
+                    <td>Tiktok</td>
+                    <td>@habib_muzakki_piliang22</td>
+                  </tr>
+                  <tr>
+                    <td>Tools</td>
+                    <td>VS Code, Github, Vercel dan Netlify</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <br />
+
+    <div class="card text-center">
+      <div class="card-body text-center">
+        <h5 class="card-title">
+          Copyright &copy; 2026 Habib Muzakki Piliang. All rights reserved.
+        </h5>
+        <p class="card-text">
+          Aspiring Full Stack Dev | Wibu Anime | Wota JKT48 | Tech Enthusiast |
+          Anak Minang |
+        </p>
+      </div>
+      <div class="card-footer">Footer</div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

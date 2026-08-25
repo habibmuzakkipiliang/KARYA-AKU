@@ -1,0 +1,20 @@
+.header {
+  background-color: orange;
+  color: #343a40;
+  font-size: medium;
+  line-height: 1.5;
+}
+
+.body {
+  background-color: chartreuse;
+  color: #343a40;
+  font-size: medium;
+  line-height: 1.5;
+}
+
+.nav {
+  background-color: #f8f9fa;
+  color: #343a40;
+  font-size: medium;
+  line-height: 1.5;
+}
